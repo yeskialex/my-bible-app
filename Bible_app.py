@@ -15,7 +15,7 @@ my_bible.init()
 st.title("Handong Bible App")
 st.write("Yehezkiel Alexander 22100828")
 
-book_selected = st.selectbox("Book:", options = book_full_names)
+book_selected = st.selectbox("Book:", options = my_bible.book_full_names)
 
 chapter_selected = st.slider("Chapter:", min_value=1, max_value=my_bible.get_max_chapter(book_selected), step=1)
 
