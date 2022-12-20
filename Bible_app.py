@@ -25,4 +25,4 @@ st.info(my_bible.search(book_selected, chapter_selected, verse_selected))
 
 keyword = st.text_input("Enter keyword to search:", "")
 verse_found = my_bible.search_by_keyword(keyword)
-st.info(verse_found)
+st.write(verse_found)
