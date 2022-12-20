@@ -23,6 +23,6 @@ verse_selected = st.slider("Verse:", min_value=1, max_value = my_bible.get_max_v
 
 st.info(my_bible.search(book_selected, chapter_selected, verse_selected))
 
-keyword = st.text_input("Enter keyword to search:", ")
+keyword = st.text_input("Enter keyword to search:", "")
 verse_found = my_bible.search_by_keyword(keyword)
 st.info(verse_found)
